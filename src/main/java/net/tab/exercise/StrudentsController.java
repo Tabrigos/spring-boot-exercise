@@ -14,6 +14,7 @@ public class StrudentsController {
 
 		List<Student> students = new ArrayList<>();
 		students.add(new Student(2, "Peppe", "Pizza", "Napoli", "Idle"));
+		students.add(new Student(3, "Calo", "Ggero", "Palermo", "Acrive"));
 		
 		return students;
 	}
