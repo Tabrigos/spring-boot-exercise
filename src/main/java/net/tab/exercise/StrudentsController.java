@@ -18,4 +18,12 @@ public class StrudentsController {
 		return studentService.getAllStudents();
 	}
 	
+	public Student getStudent(int id) {
+		return studentService.getStudent(id);
+	}
+	
+	public void addStudent(Student student) {
+		studentService.addStudent(student);
+	}
+	
 }
