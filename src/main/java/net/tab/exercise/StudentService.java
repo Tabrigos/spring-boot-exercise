@@ -37,7 +37,7 @@ public class StudentService {
 		}
 	}
 	
-	public void deletePlayer(int id) {
+	public void deleteStudent(int id) {
 		students.removeIf(s -> s.getId() == id);
 	}
 	
