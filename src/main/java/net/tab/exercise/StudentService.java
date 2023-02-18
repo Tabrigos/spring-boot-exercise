@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StudentService {
+public class StudentService implements StudentServiceI {
 
 	private List<Student> students = new ArrayList<>(Arrays.asList
 			(new Student(2, "Peppe", "Pizza", "Napoli", "Idle"),
