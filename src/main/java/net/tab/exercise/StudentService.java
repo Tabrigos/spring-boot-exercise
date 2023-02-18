@@ -17,7 +17,7 @@ public class StudentService {
 		return students;
 	}
 	
-	public Student getStudent(int id) {
+	public Student getStudent(long id) {
 		return students.stream()
 				.filter(s -> s.getId() == id)
 				.findFirst()
@@ -28,7 +28,7 @@ public class StudentService {
 		students.add(student);
 	}
 	
-	public void updateStudent(int id, Student student) {
+	public void updateStudent(long id, Student student) {
 		for(int i = 0; i < students.size(); i++) {
 			Student s = students.get(i);
 			if(s.getId() == id) {
@@ -37,7 +37,7 @@ public class StudentService {
 		}
 	}
 	
-	public void deleteStudent(int id) {
+	public void deleteStudent(long id) {
 		students.removeIf(s -> s.getId() == id);
 	}
 	
