@@ -1,13 +1,17 @@
 package net.tab.exercise;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="students")
 public class Student {
 	
-	private int id;
+	@Id
+	@GeneratedValue
+	private long id;
 	private String name;
 	private String lastName;
 	private String organization;
@@ -24,7 +28,7 @@ public class Student {
 	public Student() {
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
