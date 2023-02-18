@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
 public class StudentService implements StudentServiceI {
 
 	private List<Student> students = new ArrayList<>(Arrays.asList
-			(new Student(2, "Peppe", "Pizza", "Napoli", "Idle"),
-			new Student(3, "Calo", "Ggero", "Palermo", "Acrive")));
+			(new Student(Long.valueOf(2), "Peppe", "Pizza", "Napoli", "Idle"),
+			new Student(Long.valueOf(3), "Calo", "Ggero", "Palermo", "Acrive")));
 
 	public List<Student> getAllStudents() {
 		return students;
